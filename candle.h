@@ -7,17 +7,16 @@ using Price = double;
 
 struct Candle
 {
-public:
+
 	Price open;
 	Price high;
 	Price low;
 	Price close;
 
-public:
 	Candle() = default;
-	Candle(Price _open, Price _high, Price _low, Price _close);
+	Candle(Price open, Price high, Price low, Price close);
 
-public:
+
 	//находится ли цена внутри тела этой свечи
 	bool body_contains(const Price& price) const noexcept;
 
